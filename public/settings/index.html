@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>WebUntis CE | v1.0.1</title>
+    <link rel="icon" href="../img/sg.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <br><br><br><br>
+    <div class="container">
+        <div class="header">
+            <h1>WebUntis ChromeExtension</h1>
+            <img src="../img/home.png" onclick="homeButton()" id="home">
+        </div>
+        <span id="heading">Farbverlauf-Einstellung</span>
+        <br>
+        <input type="color" id="colorPicker" style="display: none;">
+        <br>
+        <div class="grid-container">
+            <div id="grid-item-self" class="grid-item"><img src="../img/plus.png" id="plus"></div>
+            <div id="grid-item-2" class="grid-item" onclick="changeBackground('cyan')">Cyan</div>
+            <div id="grid-item-3" class="grid-item" onclick="changeBackground('mesa')">Mesa</div>
+            <div id="grid-item-4" class="grid-item"></div>
+            <div id="grid-item-5" class="grid-item"></div>
+            <div id="grid-item-6" class="grid-item"></div>
+          </div>
+        <div class="other">
+            <br>
+            <span><a href="/">➜ Auf die Hauptwebsite navigieren</a></span><br>
+            <br>
+        </div>
+    </div>
+    <br><br>
+    <script src="script.js"></script>
+</body>
+</html>

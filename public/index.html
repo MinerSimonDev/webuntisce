@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>WebUntis CE | v1.0.1</title>
+    <link rel="icon" href="../img/sg.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <br><br><br><br>
+    <div class="container">
+        <div class="header">
+            <h1>WebUntis ChromeExtension</h1>
+            <img src="img/settings.png" onclick="settingsButton()">
+        </div>
+        <div class="input">
+            <input type="text" class="searchInput" id="searchInput" placeholder="Gebe den Namen einer Klasse ein (z.B. 1aWI)">
+            <button onclick="submitInput()">Suchen</button>
+        </div>
+        <br>
+        <div class="checkRemember">
+            <input type="checkbox" id="rememberInput">
+            <span>Eingabe merken</span><br>
+            <span id="storageInformation">*Alle Daten (z.B. auch QR-Code Login) werden im LocalStorage gespeichert</span>
+        </div>
+        <div class="other">
+            <br>
+            <span ><a href="/qrcode-login">➜ Mit WebUntis QR-Code anmelden</a></span><br>
+            <br>
+        </div>
+    </div>
+    <br><br>
+    <div class="container" id="Stundenplan">
+        <div class="header-timetable">
+            <h1>Stundenplan</h1>
+            <span id="timeTableInformation">Suche nach einer Klasse, um einen Stundenplan zu erhalten.</span>
+            <br><br>
+            <div id="tableDiv"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

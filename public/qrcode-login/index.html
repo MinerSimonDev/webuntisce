@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/sg.png">
+    <title>WebUntis CE | v1.0.1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <br><br><br><br>
+    <div class="container">
+        <div class="header">
+            <h1>WebUntis ChromeExtension</h1>
+            <img src="../img/settings.png" onclick="settingsButton()">
+        </div>
+        <div class="input">
+            <input type="file">
+            <button onclick="uploadQrCode()">Hochladen</button>
+        </div>
+        <br>
+        <div class="checkRemember">
+            <input type="checkbox" id="rememberInput">
+            <span>QR-Code merken</span><br>
+            <span id="storageInformation">*Alle Daten (z.B. auch QR-Code Login) werden im LocalStorage gespeichert</span>
+        </div>
+        <div class="other">
+            <br>
+            <span><a href="/">➜ Mit anonymen WebUntis Zugang anmelden</a></span><br>
+            <br>
+        </div>
+    </div>
+    <br><br>
+    <div class="container" id="Stundenplan">
+        <div class="header-timetable">
+            <h1>Dein Stundenplan</h1>
+            <span id="timeTableInformation">Melde dich mit deinem QR-Code an, um deinen Stundenplan zu erhalten.</span><br>
+            <span id="getQrCodeInformation">*Den QR Code erhältst du unter <u>Dein Profil</u> ➜ <u>Freigaben</u> ➜ <u>Anzeigen</u></span>
+            <br><br>
+            <div id="tableDiv"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
